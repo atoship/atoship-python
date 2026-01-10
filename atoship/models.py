@@ -87,7 +87,7 @@ class Address(BaseModel):
     updated_at: Optional[datetime] = Field(default=None, alias="updatedAt")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
         use_enum_values = True
 
 
@@ -106,7 +106,7 @@ class OrderItem(BaseModel):
     value: Optional[float] = None
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
         use_enum_values = True
 
 
@@ -156,7 +156,7 @@ class Order(BaseModel):
     custom_fields: Optional[Dict[str, Any]] = Field(default=None, alias="customFields")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
         use_enum_values = True
 
     @validator("items")
@@ -183,7 +183,7 @@ class ShippingRate(BaseModel):
     rate_id: Optional[str] = Field(default=None, alias="rateId")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class ShippingLabel(BaseModel):
@@ -214,7 +214,7 @@ class ShippingLabel(BaseModel):
     updated_at: Optional[datetime] = Field(default=None, alias="updatedAt")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
         use_enum_values = True
 
 
@@ -239,7 +239,7 @@ class TrackingInfo(BaseModel):
     last_update: Optional[str] = Field(default=None, alias="lastUpdate")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class Plan(BaseModel):
@@ -257,7 +257,7 @@ class Plan(BaseModel):
     created_at: Optional[datetime] = Field(default=None, alias="createdAt")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
         use_enum_values = True
 
 
@@ -281,7 +281,7 @@ class User(BaseModel):
     updated_at: Optional[datetime] = Field(default=None, alias="updatedAt")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
         use_enum_values = True
 
     @validator("email")
@@ -306,7 +306,7 @@ class ApiKey(BaseModel):
     created_at: Optional[datetime] = Field(default=None, alias="createdAt")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class Webhook(BaseModel):
@@ -323,7 +323,7 @@ class Webhook(BaseModel):
     updated_at: Optional[datetime] = Field(default=None, alias="updatedAt")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
     @validator("url")
     def validate_url(cls, v):
@@ -346,7 +346,7 @@ class CarrierAccount(BaseModel):
     created_at: Optional[datetime] = Field(default=None, alias="createdAt")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class MonitoringMetrics(BaseModel):
@@ -361,7 +361,7 @@ class MonitoringMetrics(BaseModel):
     errors: List[Dict[str, Union[str, int]]]
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PerformanceMetrics(BaseModel):
@@ -374,7 +374,7 @@ class PerformanceMetrics(BaseModel):
     database: Dict[str, Union[int, Dict[str, float]]]
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 # Request models
@@ -397,7 +397,7 @@ class CreateOrderRequest(BaseModel):
     custom_fields: Optional[Dict[str, Any]] = Field(default=None, alias="customFields")
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetRatesRequest(BaseModel):
@@ -408,7 +408,7 @@ class GetRatesRequest(BaseModel):
     options: Optional[Dict[str, Any]] = None
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PurchaseLabelRequest(BaseModel):
@@ -421,7 +421,7 @@ class PurchaseLabelRequest(BaseModel):
     options: Optional[Dict[str, Any]] = None
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 # Response models
@@ -434,7 +434,7 @@ class APIResponse(BaseModel):
     timestamp: Optional[str] = None
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PaginatedResponse(BaseModel):
@@ -446,4 +446,4 @@ class PaginatedResponse(BaseModel):
     timestamp: Optional[str] = None
 
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True

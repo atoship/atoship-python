@@ -1,15 +1,16 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: atoship-sdk
 Version: 1.0.0
 Summary: Official Python SDK for atoship API
-Home-page: https://github.com/atoship/sdk-python
+Home-page: https://github.com/atoship-LLC/atoship-python
 Author: atoship Team
-Author-email: support@atoship.com
-License: UNKNOWN
-Project-URL: Bug Reports, https://github.com/atoship/sdk-python/issues
-Project-URL: Source, https://github.com/atoship/sdk-python
+Author-email: atoship Team <support@atoship.com>
+License: MIT
+Project-URL: Homepage, https://atoship.com
 Project-URL: Documentation, https://docs.atoship.com/sdk/python
-Platform: UNKNOWN
+Project-URL: Repository, https://github.com/atoship/sdk-python
+Project-URL: Bug Reports, https://github.com/atoship/sdk-python/issues
+Keywords: shipping,logistics,api,sdk,atoship
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: MIT License
@@ -25,7 +26,21 @@ Classifier: Topic :: Internet :: WWW/HTTP
 Classifier: Topic :: Office/Business :: Shipping
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.0
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: typing-extensions>=4.5.0
 Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
 
 # atoship Python SDK
 
@@ -501,4 +516,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for a list of changes and version history.
-
