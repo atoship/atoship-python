@@ -47,6 +47,6 @@ setup(
     project_urls={
         "Bug Reports": "https://github.com/atoship-LLC/atoship-python/issues",
         "Source": "https://github.com/atoship-LLC/atoship-python",
-        "Documentation": "https://docs.atoship.com/sdk/python",
+        "Documentation": "https://atoship.com/developers",
     },
 )

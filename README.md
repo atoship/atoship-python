@@ -461,7 +461,7 @@ See the [examples/](examples/) directory for comprehensive usage examples:
 ## Support
 
 - 📧 Email: support@atoship.com
-- 📚 Documentation: https://docs.atoship.com/sdk/python
+- 📚 Documentation: https://atoship.com/developers
 - 🐛 Issues: https://github.com/atoship/sdk-python/issues
 - 💬 Community: https://community.atoship.com
 
