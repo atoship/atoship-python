@@ -48,7 +48,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://atoship.com"
-Documentation = "https://atoship.com/developers"
+Documentation = "https://atoship.com/docs"
 Repository = "https://github.com/atoship/sdk-python"
 "Bug Reports" = "https://github.com/atoship/sdk-python/issues"
 

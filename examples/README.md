@@ -410,7 +410,7 @@ async def process_order(order_data):
 ## Getting Help
 
 - 📧 Email: support@atoship.com
-- 📚 Documentation: https://atoship.com/developers
+- 📚 Documentation: https://atoship.com/docs
 - 🐛 Issues: https://github.com/atoship/sdk-python/issues
 - 💬 Community: https://community.atoship.com
 

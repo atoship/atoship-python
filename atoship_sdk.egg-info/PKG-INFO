@@ -7,7 +7,7 @@ Author: atoship Team
 Author-email: atoship Team <support@atoship.com>
 License: MIT
 Project-URL: Homepage, https://atoship.com
-Project-URL: Documentation, https://atoship.com/developers
+Project-URL: Documentation, https://atoship.com/docs
 Project-URL: Repository, https://github.com/atoship/sdk-python
 Project-URL: Bug Reports, https://github.com/atoship/sdk-python/issues
 Keywords: shipping,logistics,api,sdk,atoship
@@ -505,7 +505,7 @@ See the [examples/](examples/) directory for comprehensive usage examples:
 ## Support
 
 - 📧 Email: support@atoship.com
-- 📚 Documentation: https://atoship.com/developers
+- 📚 Documentation: https://atoship.com/docs
 - 🐛 Issues: https://github.com/atoship/sdk-python/issues
 - 💬 Community: https://community.atoship.com
 
